@@ -30,7 +30,6 @@ $.ajax({
   data: JSON.stringify({}),
   success: function (data) {
       for (const place of data) {
-
           const article = `<article>
               <div class="title_box">
                   <h2>${place.name}</h2>
@@ -45,7 +44,6 @@ $.ajax({
                   ${place.description}
               </div>
           </article>`;
-
           $('section.places').append(article);
       }
   }
